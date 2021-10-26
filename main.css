@@ -1,0 +1,316 @@
+@charset "utf-8";
+/* Reset CSS*/
+*{
+	margin: 0;
+	padding:0;
+}
+#banner{
+	background-image: url("background.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	color:white;
+	text-align: center;
+}
+#banner h1{
+
+	font-size: 50px;
+	font-family: Roboto;
+	padding-top:25%;
+	
+}
+#banner i{
+	padding:10px 20px;
+	
+}
+a{
+	color:white;
+}
+#aboutus .hinhanh img{
+	height: 300px;
+	
+}
+#aboutus{
+	display: grid;
+	grid-template-columns: 40% 60%;
+}
+#aboutus .hinhanh{
+	
+	text-align: center;
+	padding:10px;
+	
+}
+#aboutus .noidung{
+	padding:50px;
+	
+}
+
+#aboutus .noidung h2{
+	padding-bottom: 20px;
+}
+#skill{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	padding:100px 0;
+	
+	background-color: #F5F5F5;
+}
+#skill i,h3,p{
+	padding:5px 10px;
+}
+.contentportfolio{
+	text-align: center;
+	padding:50px 0;
+}
+.contentportfolio ul li{
+	display: inline;
+	padding:0 20px;
+}
+.contentportfolio ul{
+	padding-top:10px;
+}
+.anpham{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: 200px 200px;
+	padding:10px 200px;
+	grid-row-gap: 15px;
+}
+.anpham1{
+	background-image: url("work-1.jpg");
+	background-size: cover;
+	
+	width: 200px;
+	background-position: center;
+}
+.anpham2{
+	background-image:url("work-2.jpg");
+	background-size: cover;
+	
+	width: 200px;
+	background-position: center;
+}
+.anpham3{
+	background-image:url("work-3.jpg");
+	background-size: cover;
+	
+	width: 200px;
+	background-position: center;
+}
+.anpham4{
+	background-image:url("work-4.jpg");
+	background-size: cover;
+	
+	width: 200px;
+	background-position: center;
+}
+.anpham5{
+	background-image:url("work-5.jpg");
+	background-size: cover;
+	
+	width: 200px;
+	background-position: center;
+}
+.anpham6{
+	background-image:url("work-6.jpg");
+	background-size: cover;
+	
+	width: 200px;
+	background-position: center;
+}
+#form{
+	text-align: center;
+	padding-top:30px;
+}
+#form h1,p{
+	padding:10px;
+}
+.info{
+	display: flex;
+	justify-content: center;
+	
+}
+.info .info1{
+	padding:10px 30px;
+}
+table{
+	text-align: left;
+    margin: 0 auto;
+	width: 40%;
+}
+table input,textarea{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #515151;
+	
+}
+
+table tr td{
+	padding:10px;
+}
+button{
+	background: transparent;
+	border:none;
+	padding:5px 10px;
+	border:1.5px solid black;
+	border-radius: 20px;
+}
+footer{
+	margin-top:20px;
+	background-color: black;
+	text-align: center;
+	color:white;
+	padding:40px;
+	font-size: 16px;
+	
+}
+html{
+	scroll-behavior: smooth;
+}
+.demoprocess{
+	height:100px;
+	background-color:lightgray;
+	width: 100px;
+	margin-left: 30px;
+	animation: phongto 1s infinite;
+	
+}
+#form h1{
+	animation:phongto 2s infinite;
+}
+@keyframes phongto{
+	0%{
+		transform: scale(1);
+		color:black;
+	}
+	50%{
+		transform: scale(2);
+		color:aqua;
+	}
+	100%{
+		transform: scale(0.5);
+	}
+}
+.chuyentiep{
+	animation: nhayxuong 2s infinite;
+}
+@keyframes nhayxuong{
+	0%{
+		transform: translateY(0);
+	}
+	
+	100%{
+		transform: translateY(50px);
+	}
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#ontop{
+	position: fixed;
+	z-index: 99;
+	right: 30px;
+	bottom: 30px;
+	background-color: antiquewhite;
+	border: none;
+	display: none;
+}
+#ontop:hover{
+	background-color: aquamarine;
+	color:white;
+}
+nav img{
+	margin-left: 20px;
+	height: 50px;
+}
+nav ul li{
+	display: inline;
+	padding:0 30px;
+	
+}
+nav ul{
+	padding:15px 0;
+	float: right;
+	width: 50%;
+	
+}
+nav{
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	z-index: 100;
+	display: none;
+}
+
+/* Responsive website */
+@media screen and (max-width:415px){
+	#banner{
+		padding-top:40%;
+	}
+	#aboutus{
+		display: block;
+		
+	}
+	#skill{
+		display: block;
+		padding:20px;
+	}
+	.contentportfolio ul li {
+   
+    padding: 0px 10px;
+	}
+	.anpham{
+		display: grid;
+		grid-template-columns: 100%;
+		padding:20px;
+	}
+	.anpham1,.anpham2,.anpham3,.anpham4,.anpham5,.anpham6{
+		width: 100%;
+	}
+	.info{
+		display: block;
+	}
+	table{
+		width: 100%;
+	}
+	nav ul{
+		width: 75%;
+	}
+	nav ul li {
+    
+    padding: 0 15px;
+}
+	
+}
+@media screen and (max-width:768px) and (min-width:415px){
+	body{
+		color:red;
+	}
+}
+
+
+
